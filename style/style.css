@@ -338,11 +338,47 @@ small, .text_small {font-size: 0.8rem;}
   height: 1960px;
   background-size: 100% !important;
   background-position: center;
-  transform-origin: 0 0;
+  transform-origin: 50% 50%;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: scale(0.8) translate(-50%, -70%);
+  transform: scale(0.6) translate(-50%, -70%);
+}
+
+@media (min-width: 20rem) {
+  .tablet {
+    transform: translate(-50%, -60%) scale(calc(20 / 130));
+  }
+}
+
+@media (min-width: 30rem) {
+  .tablet {
+    transform: translate(-50%, -60%) scale(calc(30 / 130));
+  }
+}
+
+@media (min-width: 40rem) {
+  .tablet {
+    transform: translate(-50%, -60%) scale(calc(40 / 130));
+  }
+}
+
+@media (min-width: 50rem) {
+  .tablet {
+    transform: translate(-50%, -60%) scale(calc(50 / 130));
+  }
+}
+
+@media (min-width: 60rem) {
+  .tablet {
+    transform: translate(-50%, -60%) scale(calc(60 / 130));
+  }
+}
+
+@media (min-width: 80rem) {
+  .tablet {
+    transform: translate(-50%, -60%) scale(calc(80 / 130));
+  }
 }
 
 .tablet-perspective {

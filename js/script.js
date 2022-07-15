@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	const urlParams = new URLSearchParams(queryString);
 	const url = urlParams.get('url');
 	if (url !== '') {
-		if (typeof url === 'undefined') {
+		if (typeof url !== 'undefined') {
 			document.getElementById("url").value = url;
 
 			var iframes = document.getElementsByTagName('iframe');
